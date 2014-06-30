@@ -7,11 +7,9 @@ class ExampleTest extends TestCase {
 	 *
 	 * @return void
 	 */
-	public function testBasicExample()
+	public function testFoo()
 	{
-		$crawler = $this->client->request('GET', '/');
-
-		$this->assertTrue($this->client->getResponse()->isOk());
+		$lastfm = new Gnosis\Lastfm\Lastfm();
 	}
 
 }

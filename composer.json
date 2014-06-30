@@ -5,7 +5,9 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"barryvdh/laravel-ide-helper": "1.x-dev"
+        "phpunit/phpunit": "3.7.*",
+		"barryvdh/laravel-ide-helper": "1.x-dev",
+		"dandelionmood/lastfm": "v0.2"
 	},
 	"autoload": {
 		"classmap": [
@@ -24,7 +26,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
-            "php artisan ide-helper-generate",
+            "php artisan ide-helper:generate",
 			"php artisan optimize"
 		],
 		"post-create-project-cmd": [
